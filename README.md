@@ -17,7 +17,7 @@ Create clone repository in local
 
 Creating  and Activating conda environment
 ```
-conda create -p venv python==3.7 -y # -p to create venv in project folder itself so that it can be deleted alongwith project
+conda create -p venv python==3.9.7 -y # -p to create venv in project folder itself so that it can be deleted alongwith project
 ```
 ```
 conda activate venv/
@@ -29,6 +29,8 @@ conda activate venv
 
 ```
 pip install -r requirements.txt
+housing-predictor.egg-info comes from installation of -e . file
+
 ```
 
 To Add files to git
@@ -51,7 +53,7 @@ To check all version maintained by git
 ```
 git log
 ```
-
+g
 To create version/commit all changes by git
 ```
 git commit -m "message"
@@ -104,6 +106,9 @@ docker stop <container_id>
 
 ```
 python setup.py install
+#To use this user defined module rather than putting it in requirements.txt (which uses already defined modules)
+#Change author name over there
+
 
 ```
 
